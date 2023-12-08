@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .froms import ThingForm
+from .forms import ThingForm
 def home(request):
     if request.method == 'POST':
         form = ThingForm(request.POST)
